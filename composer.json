@@ -1,0 +1,47 @@
+{
+    "name": "surazdott/two-step-verification",
+    "description": "Laravel package for two step verification.",
+    "type": "package",
+    "keywords": [
+        "laravel",
+        "two-step-verification",
+        "laravel-email-verification"
+    ],
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Suraj Dott",
+            "email": "surajdatheputhe@gmail.com"
+        }
+    ],
+    "require": {
+        "php": "^8.1",
+        "laravel/framework": "10.*",
+        "laravel/ui": "4.*"
+    },
+    "autoload": {
+        "psr-4": {
+            "SurazDott\\TwoStep\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "SurazDott\\TwoStep\\Tests\\": "tests/"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "SurazDott\\TwoStep\\TwoStepVerificationServiceProvider"
+            ]
+        }
+    },
+    "config": {
+        "sort-packages": true,
+        "allow-plugins": {
+            "laravel/ui": true
+        }
+    },
+    "minimum-stability": "dev",
+    "prefer-stable": true
+}
